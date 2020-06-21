@@ -12,8 +12,10 @@ import java.util.List;
 public class TestController {
   @Resource
   private TestService testService;
-  @RequestMapping("/test")
+
+  @RequestMapping(value="/test", produces = { "application/json;charset=UTF-8" })
   public List<Test> test() {
+    System.out.println(testService.list());
     return testService.list();
   }
 }
