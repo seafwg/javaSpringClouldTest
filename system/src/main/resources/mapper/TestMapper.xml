@@ -3,7 +3,7 @@
 
 <mapper namespace="com.seafwg.system.mapper.TestMapper">
     <select id="list" resultType="com.seafwg.system.domain.Test">
-        SELECT `id`, `name` from `test`
+        select `id`, `name` from `test`
     </select>
 </mapper>
 
